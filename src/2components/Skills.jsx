@@ -79,7 +79,7 @@ function Skills() {
                 {/* "Prev" button on the left side */}
                 <button
                   onClick={prevSlide}
-                  className="bg-gray-600 text-white px-4 py-4 rounded-lg absolute left-2 md:left-4 lg:left-8 top-1/3 transform z-10"
+                  className="bg-gray-600 text-white px-4 py-4 rounded-lg absolute left-0 top-1/3 transform z-10"
                 >
                   <FaLessThan />
                 </button>
@@ -104,7 +104,7 @@ function Skills() {
                 {/* "Next" button on the right side */}
                 <button
                   onClick={nextSlide}
-                  className="bg-gray-600 text-white px-4 py-4 rounded-lg absolute right-2 md:right-4 lg:right-8 top-1/3 transform z-10"
+                  className="bg-gray-600 text-white px-4 py-4 rounded-lg absolute right-0 top-1/3 transform z-10"
                 >
                   <FaGreaterThan />
                 </button>
