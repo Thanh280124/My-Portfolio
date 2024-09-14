@@ -1,5 +1,6 @@
 import '../App.css'
 import ProfilePic from '../assets/thanhpic.jpg';
+import { TypeAnimation } from 'react-type-animation';
 function Introduction() {
   return (
     <div>
@@ -7,9 +8,20 @@ function Introduction() {
     <div className="container m-auto px-4 py-12 flex flex-col md:flex-row items-center md:py-32">
       <div className="md:text-left">
         <h1 className="text-4xl font-bold">Hello, I'm Pham Thanh</h1>
-        <h1 className="text-4xl font-bold mt-1 gradient-text running-text">Frontend Developer</h1>
-        <p className="mt-4 text-gray-600">
-          Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using here, content, making it look like readable English.
+        {/* <h1 className="text-4xl font-bold mt-1 gradient-text running-text">Frontend Developer</h1> */}
+        <TypeAnimation className='text-4xl font-bold mt-1 gradient-text' sequence={
+          [
+            'Frontend Developer',
+            2000,
+            "WebDesigner",
+            2000,
+          ]
+        } 
+        wrapper='span'
+        speed={50}
+        repeat={Infinity}/>
+        <p className="mt-4 text-gray-500">
+        I am a passionate third-year software development student at VAMK, with experience in building web and mobile applications using modern technologies like React,Flutter, React Native, and MongoDB. Skilled in problem-solving, teamwork, and project leadership. I have collaborated with classmates to complete projects such as a poll question app, a pet reservation app, and a shopping web
         </p>
       </div>
 
