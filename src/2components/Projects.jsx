@@ -28,7 +28,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className='flex gap-10 mt-11 '>
+          <div className='flex flex-col md:flex-row gap-10 mt-11  '>
             <div className='border rounded-md p-5 border-gray-500 flex-1'>
               <img src={Project1} alt="" className='w-full h-auto' />
               <h3 className='text-2xl font-semibold mt-8'>Digigtal Clock</h3>

@@ -5,7 +5,7 @@ function Introduction() {
   return (
     <div>
        <section>
-    <div className="container m-auto px-4 py-12 flex flex-col md:flex-row items-center md:py-32">
+    <div className="container m-auto py-10 flex flex-col md:flex-row items-center md:py-32">
       <div className="md:text-left">
         <h1 className="text-4xl font-bold">Hello, I'm Pham Thanh</h1>
         {/* <h1 className="text-4xl font-bold mt-1 gradient-text running-text">Frontend Developer</h1> */}
