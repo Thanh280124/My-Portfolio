@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import Pic1 from '../assets/meter1.svg';
 import Pic2 from '../assets/meter2.svg';
 import Pic3 from '../assets/meter3.svg';
-
+import { FaGreaterThan } from "react-icons/fa";
+import { FaLessThan } from "react-icons/fa";
 function Skills() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showSlide, setShowSlide] = useState(true);
@@ -65,9 +66,9 @@ function Skills() {
         <div className="container m-auto px-4 py-8 bg-gray-800 rounded-3xl flex flex-col justify-center items-center">
           <h2 className="text-3xl font-semibold">Skills</h2>
 
-          <div className="flex flex-row gap-10 text-2xl mt-10">
-            <button onClick={showSlides} className="bg-gray-600 text-white px-4 py-2 rounded-lg">Show Slider</button>
-            <button onClick={showText} className="bg-gray-600 text-white px-4 py-2 rounded-lg">Show Text</button>
+          <div className="flex flex-row gap-10 text-xl mt-10">
+            <button onClick={showSlides} className="bg-gray-600 text-white px-4 py-2 rounded-lg">Skills in Slider</button>
+            <button onClick={showText} className="bg-gray-600 text-white px-4 py-2 rounded-lg">Skills in Text</button>
           </div>
 
           {/* Slider Controls */}
@@ -78,9 +79,9 @@ function Skills() {
                 {/* "Prev" button on the left side */}
                 <button
                   onClick={prevSlide}
-                  className="bg-gray-600 text-white px-4 py-2 rounded-lg absolute left-0 top-1/2 transform -translate-y-1/2 z-10"
+                  className="bg-gray-600 text-white px-4 py-4 rounded-lg absolute left-0 top-1/3 transform z-10"
                 >
-                  Prev
+                  <FaLessThan />
                 </button>
 
                 <div
@@ -103,9 +104,9 @@ function Skills() {
                 {/* "Next" button on the right side */}
                 <button
                   onClick={nextSlide}
-                  className="bg-gray-600 text-white px-4 py-2 rounded-lg absolute right-0 top-1/2 transform -translate-y-1/2 z-10"
+                  className="bg-gray-600 text-white px-4 py-4 rounded-lg absolute right-0 top-1/3 transform z-10"
                 >
-                  Next
+                  <FaGreaterThan />
                 </button>
               </div>
             </>
@@ -113,16 +114,30 @@ function Skills() {
 
           {/* Text Content */}
           {!showSlide && (
-            <div className="mt-10 text-white">
-              <h3 className="text-xl font-semibold">My Skills Overview</h3>
-              <p className="mt-4">
-                I have a strong background in teamwork, communication, and time management.
-                Throughout my career, I have successfully collaborated with diverse teams to
-                achieve project goals. I am also proficient in Git, ensuring smooth version control
-                and collaboration with other developers. Additionally, I am adept at critical thinking
-                and problem solving, making me a valuable asset to any team.
-              </p>
-            </div>
+             <div className="mt-10 text-white flex flex-wrap gap-10 text-xl mb-5">
+             <div className="flex items-center">
+               <span className="w-2.5 h-2.5 bg-white rounded-full mr-2"></span>
+               <p>Communication Skill</p>
+             </div>
+             <div className="flex items-center">
+               <span className="w-2.5 h-2.5 bg-white rounded-full mr-2"></span>
+               <p>Problem Solving</p>
+             </div>
+             <div className="flex items-center">
+               <span className="w-2.5 h-2.5 bg-white rounded-full mr-2"></span>
+               <p>Teamwork</p>
+             </div>
+             <div className="flex items-center">
+               <span className="w-2.5 h-2.5 bg-white rounded-full mr-2"></span>
+               <p>Time Management</p>
+             </div>
+             <div className="flex items-center">
+               <span className="w-2.5 h-2.5 bg-white rounded-full mr-2"></span>
+               <p>Leadership</p>
+             </div>
+             
+           </div>
+           
           )}
 
         </div>

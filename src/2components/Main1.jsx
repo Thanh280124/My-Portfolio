@@ -7,7 +7,7 @@ import Technoglies from './Technoglies';
 import Skills from './Skills';
 import AboutMe from './AboutMe';
 import Footer from './Footer';
-
+import Icon from './Icon';
 
 function Main1() {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +32,7 @@ function Main1() {
       <main>
         {/* Introduction section */}
         <Introduction />
-
+        <Icon />
         {/* Projects section */}
         <Projects />
 
