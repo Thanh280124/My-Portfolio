@@ -47,8 +47,6 @@ function Main1() {
       </main>
 
       <Footer />
-
-      {/* Scroll to Top Button */}
       {isVisible && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
