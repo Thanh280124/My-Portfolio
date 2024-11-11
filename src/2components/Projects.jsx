@@ -20,7 +20,7 @@ function Projects() {
               </div>
             </div>
             <div className='border rounded-md p-5 border-gray-500 flex-1'>
-              <img src={Aipic} alt="" className='w-full h-[350px]' />
+              <img src={Aipic} alt="" className='w-full h-[280px] xl:h-[550px]' />
               <h3 className='text-2xl font-semibold mt-8'>AI-Video-Generator</h3>
               <p className='text-gray-400 text-sm mt-2'>A mobile application developed using React Native and TypeScript. This app leverages Appwrite for user account management and facilitates video uploads and image storage. It allows users to generate videos using AI and manage their multimedia content seamlessly.</p>
 
