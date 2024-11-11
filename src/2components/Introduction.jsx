@@ -1,5 +1,5 @@
 import '../App.css'
-import ProfilePic from '../assets/thanhpic.jpg';
+import ProfilePic from '../assets/avatar.jpg';
 import { TypeAnimation } from 'react-type-animation';
 function Introduction() {
   return (

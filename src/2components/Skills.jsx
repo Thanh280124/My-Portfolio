@@ -67,8 +67,10 @@ function Skills() {
           <h2 className="text-3xl font-semibold">Skills</h2>
 
           <div className="flex flex-row gap-10 text-xl mt-10">
-            <button onClick={showSlides} className="bg-gray-600 text-white px-4 py-2 rounded-lg">Skills in Slider</button>
-            <button onClick={showText} className="bg-gray-600 text-white px-4 py-2 rounded-lg">Skills in Text</button>
+          <button onClick={showSlides} className="bg-blue-500 text-black font-medium px-4 py-2 rounded-lg transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105">Skills in Slider</button>
+
+           <button onClick={showText} className="bg-gray-800 text-blue-500 px-4 py-2 font-semibold rounded-lg border border-blue-400 transition duration-300 ease-in-out transform hover:bg-gray-700 hover:text-white hover:scale-105">Skills in Text</button>
+
           </div>
 
           {/* Slider Controls */}
@@ -79,7 +81,7 @@ function Skills() {
                 {/* "Prev" button on the left side */}
                 <button
                   onClick={prevSlide}
-                  className="bg-gray-600 text-white px-4 py-4 rounded-lg absolute left-0 top-1/3 transform z-10"
+                  className="bg-gray-800 text-white px-4 py-4 rounded-lg absolute left-0 top-1/3 transform z-10"
                 >
                   <FaLessThan />
                 </button>
@@ -104,7 +106,7 @@ function Skills() {
                 {/* "Next" button on the right side */}
                 <button
                   onClick={nextSlide}
-                  className="bg-gray-600 text-white px-4 py-4 rounded-lg absolute right-0 top-1/3 transform z-10"
+                  className="bg-gray-800 text-white px-4 py-4 rounded-lg absolute right-0 top-1/3 transform z-10"
                 >
                   <FaGreaterThan />
                 </button>

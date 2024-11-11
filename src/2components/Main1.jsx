@@ -8,7 +8,7 @@ import Skills from './Skills';
 import AboutMe from './AboutMe';
 import Footer from './Footer';
 import Icon from './Icon';
-
+import ScrollUp from '../assets/scrollup.png'
 function Main1() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -52,9 +52,7 @@ function Main1() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="fixed bottom-5 right-5 bg-blue-500 text-white rounded-full p-3 shadow-lg hover:bg-blue-700 transition-colors"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
+          <img src={ScrollUp} className='h-5 w-5' alt="" />
         </button>
       )}
     </>
