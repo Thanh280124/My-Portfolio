@@ -43,7 +43,7 @@ function Technoglies() {
 
         <div className="mt-8">
         <div className="flex justify-between items-center">
-          <h2 className="text-lg font-semibold">Git & Githubt</h2>
+          <h2 className="text-lg font-semibold">Git & Github & Gitlab</h2>
           <p className="text-gray-500">Advanced </p>
         </div>
         <span className="w-[85%] h-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md mt-2"/>

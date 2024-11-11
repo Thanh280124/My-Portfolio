@@ -19,12 +19,12 @@ function Projects() {
             </div>
             <div className='border rounded-md p-5 border-gray-500 flex-1'>
               <img src={hero} alt="" className='w-full h-auto' />
-              <h3 className='text-2xl font-semibold mt-8'>Todo List</h3>
-              <p className='text-gray-400 text-sm mt-2'>A functional to-do list app that helps users keep track of their tasks. Users can add, mark as complete, and remove tasks as needed. Built with HTML, JavaScript, and CSS, this project emphasizes simple task management and a straightforward interface.</p>
+              <h3 className='text-2xl font-semibold mt-8'>AI-Video-Generator</h3>
+              <p className='text-gray-400 text-sm mt-2'>A mobile application developed using React Native and TypeScript. This app leverages Appwrite for user account management and facilitates video uploads and image storage. It allows users to generate videos using AI and manage their multimedia content seamlessly.</p>
 
               <div className='flex  mt-12 gap-3'>
                 <button className='flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 to-cyan-500 border rounded-3xl hover:from-blue-700 hover:to-cyan-700 '><a target='_blank' href="https://thanh280124.github.io/TodoList/">Live Preview</a></button>
-                <button className='flex-1 text-sm py-3  border rounded-3xl hover:border-blue-500 hover:text-blue-500'><a target='_blank' href="https://github.com/Thanh280124/TodoList">View Github</a></button>
+                <button className='flex-1 text-sm py-3  border rounded-3xl hover:border-blue-500 hover:text-blue-500'><a target='_blank' href="https://github.com/Thanh280124/AI-Video-Generater">View Github</a></button>
               </div>
             </div>
           </div>
